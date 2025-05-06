@@ -1,0 +1,38 @@
+// File: Main.java
+// Project: Difference-Objects-Classes
+
+// This is a class definition for Car
+class Car {
+    // Fields (attributes) of the Car class
+    String make;
+    String model;
+    int year;
+
+    // Method to display car details
+    void displayInfo() {
+        System.out.println("Make: " + make + ", Model: " + model + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object (instance) of the Car class
+        Car car1 = new Car();
+        car1.make = "Toyota";
+        car1.model = "Camry";
+        car1.year = 2022;
+
+        // Creating another object of the Car class
+        Car car2 = new Car();
+        car2.make = "Honda";
+        car2.model = "Civic";
+        car2.year = 2021;
+
+        // Calling the displayInfo method for each object
+        System.out.println("Details of car1:");
+        car1.displayInfo();
+
+        System.out.println("Details of car2:");
+        car2.displayInfo();
+    }
+}
